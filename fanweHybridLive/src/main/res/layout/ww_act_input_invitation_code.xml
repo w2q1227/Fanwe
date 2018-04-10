@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/ww_ic_bg_treasure_box">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title_bar">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="@dimen/res_width_title_item"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/res_width_title_item_image"
+                android:layout_height="@dimen/res_height_title_item_image"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_arrow_left_white"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="输入邀请码"
+            android:textColor="@color/res_text_title_bar"
+            android:textSize="@dimen/res_text_title_bar"/>
+    </FrameLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center|top"
+                  android:layout_marginTop="40dp"
+                  android:text="只有一次奖励的机会，要珍惜哦"
+                  android:textColor="#ff6a8d"
+                  android:textSize="16sp"/>
+
+        <EditText android:id="@+id/et_invite_code"
+                  android:layout_width="230dp"
+                  android:layout_height="40dp"
+                  android:layout_gravity="center"
+                  android:background="@drawable/ww_bg_input_invitation_code"
+                  android:gravity="center"
+                  android:hint="填写好友给你的邀请码"
+                  android:inputType="number"
+                  android:textColor="@color/res_text_gray_l"
+                  android:textColorHint="@color/res_text_gray_s"
+                  android:textSize="13sp"/>
+
+        <TextView android:id="@+id/tv_submit"
+                  android:layout_width="230dp"
+                  android:layout_height="40dp"
+                  android:layout_gravity="bottom|center"
+                  android:layout_marginBottom="40dp"
+                  android:background="@drawable/ww_selector_btn_violet_radius3dp"
+                  android:gravity="center"
+                  android:text="提交"
+                  android:textColor="@color/white"/>
+
+    </android.support.v7.widget.CardView>
+
+
+</FrameLayout>

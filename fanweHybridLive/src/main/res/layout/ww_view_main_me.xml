@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/res_bg_activity">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:orientation="vertical"
+            android:background="@drawable/ww_bg_main_me"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:id="@+id/fl_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.fanwe.library.view.CircleImageView
+                        android:id="@+id/iv_head"
+                        android:layout_width="84dp"
+                        android:layout_height="84dp"
+                        android:src="@drawable/bg_head_image_loading"
+                        app:civ_border_color="@color/stroke_head_image"
+                        app:civ_border_width="4dp"/>
+
+                    <com.fanwe.library.view.CircleImageView
+                        android:id="@+id/iv_level"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="bottom|right"
+                        android:src="@drawable/bg_head_image_loading"
+                        android:visibility="gone"/>
+
+                </FrameLayout>
+
+                <com.fanwe.catchdoll.view.CustomArtTextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="加载中"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:maxEms="8"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--充值-->
+            <com.fanwe.catchdoll.appview.WWMeItemView
+                android:id="@+id/view_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--我的娃娃-->
+            <com.fanwe.catchdoll.appview.WWMeItemView
+                android:id="@+id/view_my_ww"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--账单明细-->
+            <com.fanwe.catchdoll.appview.WWMeItemView
+                android:id="@+id/view_bill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--光与我们-->
+            <com.fanwe.catchdoll.appview.WWMeItemView
+                android:id="@+id/view_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--设置-->
+            <com.fanwe.catchdoll.appview.WWMeItemView
+                android:id="@+id/view_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

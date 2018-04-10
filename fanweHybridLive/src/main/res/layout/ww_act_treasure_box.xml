@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/ww_ic_bg_treasure_box"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title_bar">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="@dimen/res_width_title_item"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/res_width_title_item_image"
+                android:layout_height="@dimen/res_height_title_item_image"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_arrow_left_white"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="积分宝箱"
+            android:textColor="@color/res_text_title_bar"
+            android:textSize="@dimen/res_text_title_bar"/>
+    </FrameLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="43dp"
+                  android:gravity="center"
+                  android:orientation="horizontal">
+
+        <FrameLayout android:layout_width="130dp"
+                     android:layout_height="45dp"
+                     android:layout_marginRight="35dp"
+                     android:background="@drawable/bg_blur_corner_22dp">
+
+
+            <TextView android:id="@+id/tv_diamond"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:drawableLeft="@drawable/ww_ic_diamond_3x"
+                      android:drawablePadding="5dp"
+                      android:gravity="center"
+                      android:textColor="@color/white"
+                      tools:text="128"/>
+        </FrameLayout>
+
+        <FrameLayout android:layout_width="130dp"
+                     android:layout_height="45dp"
+                     android:background="@drawable/bg_blur_corner_22dp">
+
+
+            <TextView android:id="@+id/tv_user_score"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:drawableLeft="@drawable/ww_ic_gold_coin"
+                      android:drawablePadding="5dp"
+                      android:gravity="center"
+                      android:textColor="@color/white"
+                      tools:text="3252"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:gravity="center">
+
+        <ImageView android:id="@+id/iv_treasure_box"
+                   android:layout_width="200dp"
+                   android:layout_height="200dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/ww_anim_treasure_box"/>
+
+    </LinearLayout>
+
+    <FrameLayout android:id="@+id/fl_open_box"
+                 android:layout_width="145dp"
+                 android:layout_height="50dp"
+                 android:layout_marginBottom="10dp"
+                 android:background="@drawable/ww_selector_bg_open_box">
+
+
+        <TextView android:id="@+id/tv_need_score"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:drawableLeft="@drawable/ww_ic_gold_coin"
+                  android:drawablePadding="5dp"
+                  android:gravity="center"
+                  android:textColor="@color/white"
+                  tools:text="200"/>
+    </FrameLayout>
+
+    <TextView android:id="@+id/tv_left_num_info"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="65dp"
+              android:textColor="@color/white"
+              tools:text="今天还剩下10次开启宝箱的机会"/>
+
+</LinearLayout>

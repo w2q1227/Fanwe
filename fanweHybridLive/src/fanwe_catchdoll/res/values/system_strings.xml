@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">娃娃快来</string>
+    <!-- 友盟推送配置 -->
+    <string name="umeng_appkey">5a3ca368b27b0a6fdf0002ef</string>
+    <string name="umeng_message_secret_push">8xbtjwb5ioieazfywi6qmmihoc0bvoup</string>
+    <!--腾讯地图key-->
+    <string name="tencent_map_key">36HBZ-Z5XK4-CCMUE-DWKUY-DCJSJ-JIF7M</string>
+    <!-- 微信配置 -->
+    <string name="wx_app_id">wx0f8e52d833c1de0f</string>
+    <string name="wx_app_secret">3adfb9c7889ac1ef03d2744702ced9c1</string>
+    <!-- QQ配置 -->
+    <string name="qq_auth_scheme">tencent1106773244</string>
+    <string name="qq_app_id">1106773244</string>
+    <string name="qq_app_key">KdPxpj6iloGaBBv2</string>
+    <!-- 新浪配置 -->
+    <string name="sina_app_key">3404601017</string>
+    <string name="sina_app_secret">8e727b7434be5e6a0aef1b2820aee3a7</string>
+
+    <!--腾讯直播appid-->
+    <string name="app_id_tencent_live">1400069291</string>
+    <string name="account_type_tencent_live">22912</string>
+
+    <string name="app_id">35656972</string>
+</resources>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="79dp">
+
+        <FrameLayout android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="10dp">
+
+            <TextView android:id="@+id/tv_diamonds"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="20dp"
+                      android:textColor="@color/res_text_gray_l"
+                      android:textSize="14sp"
+                      tools:text="兑换100钻石"/>
+
+            <TextView android:id="@+id/tv_creae_time"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="bottom"
+                      android:layout_marginBottom="20dp"
+                      android:textColor="@color/res_text_gray_s"
+                      android:textSize="12sp"
+                      tools:text="2017-10-10 10:00:00"/>
+
+        </FrameLayout>
+
+
+        <TextView android:id="@+id/tv_score"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="right|center"
+                  android:layout_marginRight="10dp"
+                  android:drawableLeft="@drawable/ww_ic_gold_coin"
+                  android:drawablePadding="5dp"
+                  android:textColor="@color/res_text_gray_l"
+                  android:textSize="16sp"
+                  tools:text="-1000"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/res_bg_activity">
+
+    <com.fanwe.lib.statelayout.SDStateLayout
+        android:id="@id/view_state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_confirm_get">
+
+        <com.fanwe.lib.pulltorefresh.SDPullToRefreshView
+            android:id="@id/view_pull_to_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/sv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ww_bg_white_rectangle_radius"
+                        android:layout_margin="10dp">
+                        <com.fanwe.catchdoll.appview.WWAddressCardView
+                            android:id="@+id/ww_address_card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ww_bg_white_rectangle_radius"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                        <com.fanwe.catchdoll.appview.WWDollCardView
+                            android:id="@+id/ww_doll_card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <com.fanwe.catchdoll.appview.WWSelectDollListView
+                            android:id="@+id/ww_select_doll_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ww_bg_white_rectangle_radius"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="12dp">
+
+                        <com.fanwe.catchdoll.appview.WWRechargeWayView
+                            android:id="@+id/ww_recharge_way"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </FrameLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </com.fanwe.lib.pulltorefresh.SDPullToRefreshView>
+    </com.fanwe.lib.statelayout.SDStateLayout>
+
+    <TextView
+        android:id="@+id/tv_confirm_get"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        style="@style/res.Button"
+        android:background="@drawable/ww_btn_address_pink_radius"
+        android:text="立即领取"
+        android:textColor="@color/white"/>
+</RelativeLayout>

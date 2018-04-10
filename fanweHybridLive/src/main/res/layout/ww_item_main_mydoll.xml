@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="5dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp"
+        app:contentPaddingLeft="7dp"
+        app:contentPaddingRight="7dp"
+        app:contentPaddingTop="5dp">
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="163dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_bg"
+                android:layout_width="match_parent"
+                android:layout_height="163dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon"
+                app:riv_corner_radius="8dp"
+                tools:ignore="ContentDescription"/>
+
+            <com.fanwe.catchdoll.view.CustomArtTextView
+                android:id="@+id/tv_doll_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_time"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:text="比卡丘比卡丘比卡丘比卡丘比卡丘"/>
+
+            <com.fanwe.catchdoll.view.CustomArtTextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:text="2017/11/14/23:00:00"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_receive_status"
+            android:layout_width="41dp"
+            android:layout_height="18dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            tools:text="已领取"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="bottom"
+                      android:layout_marginBottom="5dp">
+
+            <com.fanwe.xianrou.widget.QKDiamondTextView
+                android:id="@+id/tv_exchange_diamonds"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/ww_selector_btn_violet_radius10dp"
+                android:gravity="center"
+                android:text="兑换$"
+                android:textColor="@color/white"
+                android:textSize="11sp"/>
+
+            <TextView android:id="@+id/tv_receive_doll"
+                      android:layout_width="match_parent"
+                      android:layout_height="20dp"
+                      android:layout_weight="1"
+                      android:background="@drawable/ww_selector_main_btn_bg10dp"
+                      android:gravity="center"
+                      android:text="领取娃娃"
+                      android:textColor="@color/white"
+                      android:textSize="11sp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

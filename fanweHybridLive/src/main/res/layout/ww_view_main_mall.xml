@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/res_bg_activity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title_bar"
+        android:background="@color/res_bg_title_bar">
+
+        <include
+            android:id="@+id/view_back"
+            layout="@layout/include_live_title_bar_back"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="积分商城"
+            android:textColor="@color/res_text_title_bar"
+            android:textSize="@dimen/res_text_title_bar"/>
+
+
+        <TextView android:id="@+id/tv_exchange_record"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center|right"
+                  android:layout_marginRight="10dp"
+                  android:text="兑换记录"
+                  android:textColor="@color/res_text_title_bar"
+                  android:textSize="@dimen/res_text_sub_title_bar"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <com.fanwe.lib.viewpager.indicator.impl.PagerIndicator
+            android:id="@+id/view_pager_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <com.fanwe.lib.viewpager.SDViewPager
+        android:id="@+id/vpg_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

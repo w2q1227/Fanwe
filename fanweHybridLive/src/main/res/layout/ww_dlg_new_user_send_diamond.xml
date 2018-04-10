@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/res_blur_m">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/res_layer_white_corner"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="25dp"
+                      android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/res_text_gray_l"
+                android:textSize="16sp"
+                tools:text="新用户注册即送60"/>
+
+            <com.fanwe.xianrou.widget.QKDiamondTextView
+                style="@style/res.Text.Base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textColor="@color/res_text_gray_l"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="98dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ww_ic_new_user_send_diamond"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:divider="@drawable/lib_dialog_stroke"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                style="@style/libDialog.Confirm.Text.Confirm"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/lib_dialog_height_dialog_button"
+                android:layout_weight="1"
+                android:background="@drawable/lib_dialog_sel_bg_button_bottom_left"
+                android:text="我要充值"
+                android:textColor="@color/res_main_color"/>
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                style="@style/libDialog.Confirm.Text.Cancel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/lib_dialog_height_dialog_button"
+                android:layout_weight="1"
+                android:background="@drawable/lib_dialog_sel_bg_button_bottom_right"
+                android:text="知道了"
+                android:textColor="@color/res_text_gray_l"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

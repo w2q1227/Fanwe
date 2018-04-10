@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:background="@color/res_bg_activity"
+             android:layout_height="match_parent">
+
+    <com.fanwe.lib.pulltorefresh.SDPullToRefreshView
+        android:id="@id/view_pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <com.fanwe.library.webview.CustomWebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.fanwe.lib.pulltorefresh.SDPullToRefreshView>
+
+    <TextView android:id="@+id/tv_exchange"
+              style="@style/res.Button"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_gravity="bottom"
+              android:layout_margin="10dp"
+              android:background="@drawable/ww_sel_main_color_corner"
+              android:text="确认兑换"
+              android:textColor="@color/white"/>
+
+</LinearLayout>

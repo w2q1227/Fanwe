@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#b2000000"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.fanwe.catchdoll.view.CustomArtTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="差一点点就抓到了\n再抓一次!"
+            android:textColor="@color/white"
+            android:textSize="23sp"/>
+
+    </LinearLayout>
+
+    <com.fanwe.catchdoll.view.CustomArtTextView
+        android:id="@+id/tv_again"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="80dp"/>
+
+    <com.fanwe.catchdoll.view.CustomArtTextView
+        android:id="@+id/tv_count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="倒计时：30秒"
+        android:textColor="@color/white"
+        android:textSize="17sp"/>
+
+
+    <com.fanwe.catchdoll.view.CustomArtTextView
+        android:id="@+id/tv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ww_ic_bg_game_over_close"/>
+
+
+</LinearLayout>

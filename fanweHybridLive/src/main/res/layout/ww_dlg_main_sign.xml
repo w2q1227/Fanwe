@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="307dp"
+        android:layout_gravity="center"
+        android:background="@drawable/layer_main_color_corner_12dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/res.Text.Base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:text="第一日签到"/>
+
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/res.Text.Base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#fecc4e"
+            android:textSize="11sp"
+            tools:text="坚持每天签到拿奖品"/>
+
+
+        <FrameLayout android:layout_width="wrap_content"
+                     android:layout_height="0dp"
+                     android:layout_weight="1">
+
+            <com.fanwe.catchdoll.appview.WWMainSignView
+                android:id="@+id/sv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+
+        <TextView android:id="@+id/tv_sign"
+                  android:layout_width="125dp"
+                  android:layout_height="45dp"
+                  android:layout_marginBottom="25dp"
+                  android:background="@drawable/ww_selector_btn_sign"/>
+
+    </LinearLayout>
+
+</FrameLayout>

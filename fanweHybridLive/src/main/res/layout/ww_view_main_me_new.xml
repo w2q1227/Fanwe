@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/res_bg_activity">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:background="@drawable/ww_bg_main_me"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="会员中心"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/fl_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.fanwe.library.view.CircleImageView
+                        android:id="@+id/iv_head"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/bg_head_image_loading"
+                        app:civ_border_color="@color/stroke_head_image"
+                        app:civ_border_width="2dp"/>
+
+                    <com.fanwe.library.view.CircleImageView
+                        android:id="@+id/iv_level"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="bottom|right"
+                        android:src="@drawable/bg_head_image_loading"
+                        android:visibility="gone"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="加载中"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="13dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ww_ic_diamond"/>
+
+                        <TextView
+                            android:id="@+id/tv_diamond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:text="加载中"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="13dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ww_ic_gold_coin"/>
+
+                        <TextView
+                            android:id="@+id/tv_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:text="加载中"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_user_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.fanwe.live.view.LiveStringAccountTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_user_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="加载中"
+                        android:textColor="@color/text_nick_name"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <!--账单明细-->
+            <com.fanwe.catchdoll.appview.WWMeItemView
+                android:id="@+id/view_bill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--充值-->
+            <com.fanwe.catchdoll.appview.WWMeItemView
+                android:id="@+id/view_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--我的实物列表-->
+            <com.fanwe.catchdoll.appview.WWMeItemView
+                android:id="@+id/view_my_things"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--积分宝箱-->
+            <com.fanwe.catchdoll.appview.WWMeItemView
+                android:id="@+id/view_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--邀请好友-->
+            <com.fanwe.catchdoll.appview.WWMeItemView
+                android:id="@+id/view_invite_friend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--输入邀请码-->
+            <com.fanwe.catchdoll.appview.WWMeItemView
+                android:id="@+id/view_invite_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--每日签到-->
+            <com.fanwe.catchdoll.appview.WWMeItemView
+                android:id="@+id/view_everyday_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--关于我们-->
+            <com.fanwe.catchdoll.appview.WWMeItemView
+                android:id="@+id/view_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--设置-->
+            <com.fanwe.catchdoll.appview.WWMeItemView
+                android:id="@+id/view_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

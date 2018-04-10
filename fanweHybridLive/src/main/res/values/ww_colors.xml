@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--我的娃列表领取状态背景色-->
+    <color name="bg_grab_status_not_received">#e4bd35</color>
+    <color name="bg_grab_status_have_received">#41a75b</color>
+
+    <!--账单明细金币字体颜色-->
+    <color name="catch_gold">#FCF110</color>
+
+    <color name="play_disabled">#fc5d73</color>
+
+    <!--首页头部菜单选项 选中的字体颜色-->
+    <color name="home_tab_select">#f76e8e</color>
+
+    <!-- 支付方式-支付宝背景颜色 -->
+    <color name="ww_text_recharge_type_alipay">#4da6eb</color>
+    <!-- 支付方式-微信支付背景颜色 -->
+    <color name="ww_text_recharge_type_weixin">#64da44</color>
+
+    <color name="ww_live_border_outside">#EA4368</color>
+    <color name="ww_live_border_inside">#F97392</color>
+
+    <!--娃娃详情列表item颜色-->
+    <color name="grab_doll_master_rank1">#ffc82a</color>
+    <color name="grab_doll_master_rank2">#ced2d5</color>
+    <color name="grab_doll_master_rank3">#f79771</color>
+
+    <color name="state_press_cover">#37000000</color>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/res_bg_activity"
+    tools:context="com.fanwe.catchdoll.activity.WWMyExchangeThingsActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="35dp"
+                  android:background="@color/white"
+                  android:orientation="horizontal">
+
+        <com.fanwe.live.view.LiveTabUnderline
+            android:id="@+id/tab_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.fanwe.live.view.LiveTabUnderline
+            android:id="@+id/tab_not_receive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.fanwe.live.view.LiveTabUnderline
+            android:id="@+id/tab_received"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <com.fanwe.lib.viewpager.SDViewPager
+        android:id="@+id/vpg_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
